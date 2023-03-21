@@ -1,0 +1,167 @@
+
+/******************************THEME DETAILS******************************/
+
+:root {
+    --purple: #7A3E65;
+    --red: #A84448;
+    --orange: #E9A178;
+    --tan: #F6E1C3;
+    --cream: #FEF6E7;
+}
+
+/******************************TAG SELECTORS******************************/
+
+html {
+    scroll-behavior: auto !important;
+}
+
+body {
+    background-color: var(--cream);
+    text-align: center;
+    /* overflow: hidden; */
+}
+
+
+/*****************************CLASS SELECTORS*****************************/
+
+.section-box {
+    min-height: 100vh;
+    max-height: 100vh;
+    padding: 63px 5% 5% 5%;
+    position: relative;
+    transition: all 500ms ease-in;
+    opacity: 0;
+}
+
+.section-box:target {
+    min-height: 100vh;
+    max-height: 100vh;
+    padding: 63px 5% 5% 5%;
+    opacity: 100;
+    position: relative;
+    transition: all 500ms ease-in;
+}
+
+.nav-link {
+    font-size: 1.25rem;
+    color: black;
+    display: inline;
+    padding: 5px;
+}
+
+.main-text {
+    font-size: 3rem;
+    margin-bottom: 6rem;
+}
+
+.incomplete {
+    color: blue;
+}
+
+.details-list {
+    font-size: 2rem;
+    list-style: none;
+}
+
+.details-list li {
+    padding-bottom: 5%;
+}
+
+.card {
+    background-color: var(--red);
+    min-height: 100%;
+    color: var(--cream);
+}
+
+.card-list {
+    padding-left: 30%;
+}
+
+.card-list > li {
+    list-style: none;
+    text-align: left;
+}
+
+.btn {
+    
+    min-width: 25%;
+    max-width: 43%;
+    margin: 5px 3% 0 3%;
+}
+
+.back {
+    position: absolute;
+    width: fit-content;
+    min-width: unset;
+    min-width: unset;
+    margin: 0;
+    bottom: 5%;
+    left: 5%;
+}
+
+.custom-colors {
+
+    --accent: var(--red);
+    --accent-h: 358;
+    --accent-s: 42%;
+    --accent-l: 46%;
+    --accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+
+    --accent-70: hsla(var(--accent-hsl), .7);
+    --accent-80: hsla(var(--accent-hsl), .8);
+    --accent-90: hsla(var(--accent-hsl), .9);
+
+
+
+    --bs-btn-color: var(--cream);
+    --bs-btn-bg: var(--accent);
+    --bs-btn-border-color: var(--accent);
+    --bs-btn-border-radius: .5rem;
+    --bs-btn-hover-color: var(--cream);
+    --bs-btn-hover-bg: var(--accent-90);
+    --bs-btn-hover-border-color: var(--accent-90);
+    --bs-btn-active-color: var(--cream);
+    --bs-btn-active-bg: var(--accent-80);
+    --bs-btn-active-border-color: var(--accent-80);
+}
+
+
+
+
+
+/*******************************ID SELECTORS*******************************/
+
+
+/******************************MEDIA QUERIES******************************/
+
+@media screen and (max-width:600px) {
+    .main-text {
+        font-size: 2rem;
+    }
+    .buttons {
+        padding-top: 5%;
+    }
+    ul {
+        padding-left: unset;
+    }
+    
+}
+
+@media screen and (min-width:1600px) {
+    .main-text {
+        font-size: 4rem;
+    }
+    p {
+        font-size: 2rem;
+    }
+    .card-list {
+        font-size: 2rem;
+        padding-left: 10%;
+    }
+    .nav-link {
+        font-size: 1.7rem;
+    }
+
+
+
+}
