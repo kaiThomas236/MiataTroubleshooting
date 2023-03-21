@@ -1,15 +1,15 @@
 var url = window.location.href;
-window.onload = welcomeFunc();
+// window.onload = welcomeFunc();
+var n = url.lastIndexOf('.');
 
-function welcomeFunc () {
-    var n = url.lastIndexOf('/');
-    if (url.substring(n) == "/index.html") {
-        window.location.href = url + "#welcome";
-    }
-};
+// function welcomeFunc () {
+//     if (url.substring(n) == ".com") {
+//         window.location.href = url + "#welcome";
+//     }
+// };
 
-var n = url.lastIndexOf('/');
-if (url.substring(n) == "/index.html") {
+
+if (url.substring(n) == ".com") {
     window.location.href = url + "#welcome";
 }
 
