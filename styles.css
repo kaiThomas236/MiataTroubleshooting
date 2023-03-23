@@ -18,7 +18,7 @@ html {
 body {
     background-color: var(--cream);
     text-align: center;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 
