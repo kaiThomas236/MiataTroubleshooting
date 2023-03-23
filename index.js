@@ -1,6 +1,6 @@
-// var url = window.location.href;
+var url = window.location.href;
 // window.onload = welcomeFunc();
-// var n = url.lastIndexOf('.');
+var n = url.lastIndexOf('.');
 // console.log(url);
 // console.log(url.substring(n));
 
